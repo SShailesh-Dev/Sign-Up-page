@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        body {
+
+            box-sizing: border-box;
+        }
+
+        .outer-box {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
+        }
+        
+        .inner-box {
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-44%);
+            padding: 20px 40px;
+            background-color: white;
+            border-radius: 11px;
+            box-shadow: -2px -2px 5px #217ebc;
+            box-shadow: 8px 8px 5px #217ebc;
+            z-index: 2;
+        }
+        
+        .signup-header h1 {
+            font-size: 2.5rem;
+            color: black;
+        }
+        
+        .signup-header p {
+            font-size: 0.8rem;
+            color: #555;
+        }
+        
+        .signup-body {
+            margin: 20px 0px;
+        }
+
+        .signup-body p {
+            margin: 10px 0:
+
+        }
+
+        .signup-body p label{
+            display: block;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .signup-body p input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #cccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+
+        .signup-body p input[type="submit"] {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .signup-body p input[type="submit"]:hover {
+            background-color: #217ebc;
+        }
+
+        .signup-footer p {
+            color: #555;
+            text-align: center;
+        }
+
+        .signup-footer p a {
+            color: #217ebc;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background: linear-gradient(to right, #ffffff33, #ffffffff);
+            position: absolute;
+        }
+        
+        .c1 {
+            top: 100px;
+            left: 40px;
+        }
+
+        .c2 {
+            bottom: 100px;
+            right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Sign Up</h1>
+                <p>it takes 30 seconds</p>
+            </header>
+            <main class="signup-body">
+                <p>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Ex : Anuj Kumar" required>
+                </p>
+                <p>
+
+                    <label for="youremail">Your email</label>
+                    <input type="email" name="" id="youremail" placeholder="Ex : anuj@hotmail.com" required>
+                </p>
+                <p>
+
+                    <label for="yourpassword">Your password</label>
+                    <input type="password" id="yourpassword" placeholder="Ex : xyz33#" required>
+                </p>
+                <p>
+
+                    <input type="submit" id="submit" value="create accout">
+                </p>
+            </main>
+            <footer class="signup-footer">
+                <p>Already have an accout? <a href="#">Login</a></p>
+            </footer>
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+</body>
+
+</html>
